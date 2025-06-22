@@ -41,14 +41,14 @@ body {
         background-size: contain;
         height: 856px;
 
-        & .shadow {
-            & .first-banner {
-                box-shadow: inset 0px -80px 80px 150px rgba(0, 0, 0, 0.5), 0px 10px 15px -21px rgba(0, 0, 0, 0.5);
-                background-color: rgb(0, 0, 0, 0.7);
-                width: 100%;
-                height: 856px;
-            }
+
+        & .first-banner {
+            box-shadow: inset 0px -80px 80px 150px rgba(0, 0, 0, 0.5), 0px 10px 15px -21px rgba(0, 0, 0, 0.5);
+            background-color: rgb(0, 0, 0, 0.7);
+            width: 100%;
+            height: 856px;
         }
+
 
         & .redline {
             background: #502952;
@@ -204,12 +204,129 @@ body {
             }
         }
 
-        & main {}
+        & main {
+            & .more-info {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                width: 80%;
+
+                & img {
+                    width: 80px;
+                    height: 80px;
+                    justify-content: flex-end;
+                    align-self: flex-end;
+                }
+
+                & .info-card {
+                    background: linear-gradient(90deg,
+                            rgba(59, 33, 74, 0.7) 30%,
+                            rgba(39, 45, 112, 0.7) 70%);
+                    border-radius: 15px;
+                    margin-top: 60px;
+                    width: 90%;
+                    height: 75px;
+
+                    & .info-text {
+                        font-family: 'NS-Regular';
+                        font-size: 16px;
+                        width: 50%;
+                        text-align: left;
+                        float: left;
+                        margin: 15px 370px 10px 30px;
+                    }
+
+                    & .info-button {
+                        & button {
+                            margin-top: 18px;
+                            color: white;
+                            font-family: 'NS-Medium';
+                            background-color: rgba(94, 94, 94, 0.7);
+                            border: none;
+                            border-radius: 4px;
+                            padding: 10px 15px;
+                            font-size: 16px;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: rgba(87, 87, 87, 0.7);
+                                transition: 0.2s ease-in-out;
+                            }
+                        }
+                    }
+
+                }
+
+                &:hover {
+                    transition: 0.5s ease-in-out;
+                    transform: scale(1.03);
+
+                    & img {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    & .info-card {
+                        background: linear-gradient(90deg,
+                                rgba(77, 36, 97, 0.9),
+                                rgba(45, 51, 127, 0.9));
+                    }
+                }
+            }
+
+            & .more-reasons {
+                color: white;
+                margin-top: 80px;
+                width: 80%;
+
+                & h3 {
+                    font-family: 'NS-Bold';
+                    font-size: 24px;
+                    margin-top: 20px;
+                }
+
+                & div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                    margin-top: 10px;
+
+                    & div {
+                        background: linear-gradient(140deg,
+                                rgb(25, 22, 63) 40%,
+                                rgb(62, 16, 16) 100%);
+                        border-radius: 15px;
+                        padding: 10px;
+                        width: 300px;
+                        height: 320px;
+                        flex-wrap: wrap;
+
+                        & h3 {
+                            font-family: 'NS-Bold';
+                            font-size: 22px;
+                            margin: 3px 60px 0px 5px;
+                        }
+
+                        & p {
+                            font-family: 'NS-Regular';
+                            font-size: 16px;
+                            margin: 0px 5px 0px 5px;
+                        }
+
+                        & img {
+                            width: 64px;
+                        }
+                    }
+                }
+            }
+
+
+        }
 
         & footer {
             background-color: rgb(0, 0, 0);
         }
-
     }
-
 }
