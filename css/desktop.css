@@ -235,6 +235,15 @@ body {
                         text-align: left;
                         float: left;
                         margin: 15px 370px 10px 30px;
+
+                        & h {
+                            font-size: 20px;
+                        }
+
+                        & p {
+                            color: rgb(255, 255, 255);
+                            font-size: 16px;
+                        }
                     }
 
                     & .info-button {
@@ -276,11 +285,11 @@ body {
             }
 
             & .more-reasons {
-                color: white;
                 margin-top: 80px;
                 width: 80%;
 
                 & h3 {
+                    color: white;
                     font-family: 'NS-Bold';
                     font-size: 24px;
                     margin-top: 20px;
@@ -295,8 +304,8 @@ body {
 
                     & div {
                         background: linear-gradient(140deg,
-                                rgb(25, 22, 63) 40%,
-                                rgb(62, 16, 16) 100%);
+                                rgba(32, 28, 81, 0.7) 30%,
+                                rgb(62, 16, 16, 0.5) 100%);
                         border-radius: 15px;
                         padding: 10px;
                         width: 300px;
@@ -304,29 +313,159 @@ body {
                         flex-wrap: wrap;
 
                         & h3 {
+                            color: rgb(196, 196, 196);
                             font-family: 'NS-Bold';
                             font-size: 22px;
-                            margin: 3px 60px 0px 5px;
+                            margin: 5px 60px 0px 5px;
                         }
 
                         & p {
+                            color: rgb(157, 157, 157);
                             font-family: 'NS-Regular';
                             font-size: 16px;
-                            margin: 0px 5px 0px 5px;
+                            margin: 0px 5px 70px 5px;
                         }
 
                         & img {
                             width: 64px;
+                            margin: 0px 0px 0px 180px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & footer {
+            background-color: rgb(0, 0, 0);
+            padding: 10px 0px 150px 0px;
+
+            & .footer-info {
+                width: 80%;
+                margin: 0 auto;
+                padding: 35px 0px;
+
+                & .footer-email {
+                    margin-bottom: 50px;
+
+                    & p {
+                        text-align: center;
+                        color: white;
+                        font-family: 'NS-Regular';
+                        font-size: 16px;
+                    }
+
+                    & form {
+                        & input {
+                            background-color: rgba(20, 20, 20, 0.8);
+                            border: 1px solid rgb(107, 107, 107);
+                            width: 48%;
+                            height: 55px;
+                            border-radius: 5px;
+                            font-size: 16px;
+                            padding-left: 15px;
+                            margin-left: 222px;
+                        }
+
+                        & button {
+                            color: white;
+                            width: 15%;
+                            height: 50px;
+                            border-radius: 5px;
+                            border: none;
+                            background-color: rgb(209, 0, 0);
+                            font-size: 24px;
+                            margin-top: 20px;
+                            margin-left: 5px;
+                            padding: 10px 0px 45px 0px;
+                            font-family: 'NS-Bold';
+                            text-align: center;
+
+
+                            & i {
+                                margin-left: 10px;
+                                font-size: 20px;
+                            }
+                        }
+
+                        & button:hover {
+                            background-color: rgb(180, 0, 0);
+                            transition: 0.2s ease-in-out;
+                        }
+                    }
+                }
+
+                & .footer-contact {
+                    margin-bottom: 40px;
+
+                    & span {
+                        color: rgb(174, 174, 174);
+                        font-family: 'NS-Regular';
+                        font-size: 16px;
+                        margin-top: 20px;
+                    }
+
+                    & a {
+                        color: rgb(174, 174, 174);
+                        font-family: 'NS-Regular';
+                        font-size: 16px;
+                    }
+                }
+
+                & .footer-links {
+                    display: flex;
+                    
+                    & div {
+                        float: left;
+                        width: 25%;
+
+                        & a {
+                            color: rgb(157, 157, 157);
+                            font-family: 'NS-Regular';
+                            font-size: 14px;
+                            
                         }
                     }
                 }
             }
 
+            & .footer-language {
+                width: 80%;
+                margin-top: 20px;
+                margin-bottom: 40px;
 
-        }
+                & i {
+                    color: white;
+                    font-size: 20px;
+                    margin: 0px 0px 0px 0px;
+                }
 
-        & footer {
-            background-color: rgb(0, 0, 0);
+                & #langs {
+                    color: white;
+                    background: rgba(40, 40, 40, 0.5);
+                    width: 160px;
+                    padding: 8px 15px;
+                    text-align: justify;
+                    font-size: 16px;
+                    border-radius: 5px;
+                }
+            }
+
+            & h4{
+                width: 80%;
+                color: rgb(157, 157, 157);
+                font-family: 'NS-Regular';
+                font-size: 16px;
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            & p {
+                width: 80%;
+                color: rgb(157, 157, 157);
+                font-family: 'NS-Regular';
+                font-size: 16px;
+                text-align: left;
+            }
         }
     }
 }
