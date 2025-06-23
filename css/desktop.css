@@ -49,7 +49,7 @@ body {
             height: 856px;
         }
 
-
+        /* Layers Style */
         & .redline {
             background: #502952;
             background: linear-gradient(90deg,
@@ -70,6 +70,7 @@ body {
             }
         }
 
+        /* Header Style */
         & header {
             width: 84%;
 
@@ -204,6 +205,7 @@ body {
             }
         }
 
+        /* Main Style */
         & main {
             & .more-info {
                 display: flex;
@@ -284,6 +286,10 @@ body {
                 }
             }
 
+            & .top{
+                color: white;
+            }
+
             & .more-reasons {
                 margin-top: 80px;
                 width: 80%;
@@ -335,6 +341,7 @@ body {
             }
         }
 
+        /* Footer Style */
         & footer {
             background-color: rgb(0, 0, 0);
             padding: 10px 0px 150px 0px;
@@ -413,15 +420,17 @@ body {
 
                 & .footer-links {
                     display: flex;
-                    
+
                     & div {
-                        float: left;
-                        width: 25%;
+                        display: flex;
+                        flex-flow: column wrap;
+                        gap: 15px;                        width: 25%;
 
                         & a {
-                            color: rgb(157, 157, 157);
+                            color: rgb(181, 181, 181);
                             font-family: 'NS-Regular';
                             font-size: 14px;
+                            margin-left: 0px;
                             
                         }
                     }
@@ -452,19 +461,24 @@ body {
 
             & h4{
                 width: 80%;
-                color: rgb(157, 157, 157);
-                font-family: 'NS-Regular';
-                font-size: 16px;
+                color: rgb(210, 210, 210);
+                font-family: 'NS-Light';
+                font-size: 14px;
                 text-align: left;
                 margin-bottom: 30px;
+                font-weight: normal;
             }
 
             & p {
                 width: 80%;
                 color: rgb(157, 157, 157);
                 font-family: 'NS-Regular';
-                font-size: 16px;
+                font-size: 12px;
                 text-align: left;
+
+                & a {
+                    color: rgb(210, 210, 210);
+                }
             }
         }
     }
