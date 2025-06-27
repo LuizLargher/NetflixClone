@@ -1,2 +1,2 @@
-# NetflixClone
-Projeto pessoal com o objetivo de desenvolver habilidades em frontend usando HTML, CSS, JAVASCRIPT e BOOTSTRAP.
+<h1 align="center"> Netflix Clone </h1>
+<p><strong>Projeto Netflix</strong></p>
