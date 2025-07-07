@@ -32,12 +32,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url('../images/background.jpg')
-}
+
 body {
     & .container-principal {
-        /* background-image: url('../images/background.jpg'); */
+        background-image: url('../images/background.jpg');
         background-repeat: no-repeat;
         background-position: left;
         background-size: contain;
